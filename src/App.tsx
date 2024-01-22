@@ -12,6 +12,16 @@ import {
 
 import './App.css';
 
+const currentDate: Date = new Date(); 
+const options: Intl.DateTimeFormatOptions = {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+};
+
+const formattedDate: string = currentDate.toLocaleDateString(undefined, options);
+
+
 const cashTipState: RecoilState<number> = atom({
   key:'cashTipState',
   default: 0,
@@ -42,7 +52,7 @@ export default function App() {
 const DailyTipSheet: React.FunctionComponent = () => {
   return (
     <div>
-        <h1>Today's Date</h1><h1>Restaurant -- Tip Sharing Chart</h1>
+        <h1>{formattedDate}</h1><h1>Restaurant -- Tip Sharing Chart</h1>
         <DailyTipEntry />
         {/* <DailyAverages />
         <StaffGroupList /> */}
@@ -51,40 +61,40 @@ const DailyTipSheet: React.FunctionComponent = () => {
   )
 }
 
-  const DailyTipEntry: React.FunctionComponent = () => {
-    const [cashTips, setCashTips] = useRecoilState(cashTipState);
-    const [creditCardTips, setCreditCardTips] = useRecoilState(creditCardTipState);
-    const tipTotal = useRecoilValue(tipSum);
+const DailyTipEntry: React.FunctionComponent = () => {
+  const [cashTips, setCashTips] = useRecoilState(cashTipState);
+  const [creditCardTips, setCreditCardTips] = useRecoilState(creditCardTipState);
+  const tipTotal = useRecoilValue(tipSum);
 
-    const handleCreditCardTips = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const inputValue = parseFloat(e.target.value);
-      setCreditCardTips(isNaN(inputValue) ? 0 : inputValue);
-      
-    };
+  const handleCreditCardTips = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = parseFloat(e.target.value);
+    setCreditCardTips(isNaN(inputValue) ? 0 : inputValue);
     
-    const handleCashTips = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const inputValue = parseFloat(e.target.value);
-      setCashTips(isNaN(inputValue) ? 0 : inputValue);
-    };
+  };
+  
+  const handleCashTips = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = parseFloat(e.target.value);
+    setCashTips(isNaN(inputValue) ? 0 : inputValue);
+  };
 
-    return (
-      <div>
-        <label>
-          Credit Card Tips:
-          <input
-            onChange={handleCreditCardTips}
-            />
-        </label>
-        <label>
-          Cash Tips:
-          <input
-            value={cashTips}
-            onChange={handleCashTips}
-            /></label>
-        <p>Total Tips:{tipTotal}</p>
-      </div>
-      )
-    }
+  return (
+    <div>
+      <label>
+        Credit Card Tips:
+        <input
+          onChange={handleCreditCardTips}
+          />
+      </label>
+      <label>
+        Cash Tips:
+        <input
+          
+          onChange={handleCashTips}
+          /></label>
+      <p>Total Tips:{tipTotal}</p>
+    </div>
+    )
+  }
     /*
     function StaffGroupList() {
       //** tasks to create this list */
@@ -96,7 +106,7 @@ const DailyTipSheet: React.FunctionComponent = () => {
        *   in pure functions to alter the state. might look like this at 
        *   first: 
        * 
-       *    let groupNames = {
+       *    const groups = [
                 kitchen staff: {
                   employees: [
                     David:{
