@@ -22,4 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 /appLogicFile.txt
+=======
+appLogicFile.txt
+>>>>>>> 19a2e43eba5657e1767f2e88ba9f1a425d622508
