@@ -1,6 +1,12 @@
 *** THIS FILE CONTAINS SOME LOGIC FOR EACH OF THE COMPONENTS IN THIS TIP SHARING APP 
 
-COMPONENTS FROM TOP TO BOTTOM
+
+
+COMPONENTS: 
+
+LIST OF ITEMS--
+    Staff Group -- cols. == Hours - TIP - TIP - NET - earngs p/hr - gross pay - % of pay
+      staff member - **hours hard coded state
 
 1. DAILY TIP ENTRY 
     cash tip state
@@ -8,9 +14,14 @@ COMPONENTS FROM TOP TO BOTTOM
 
     total tip state 
 
+
+
   
 2.  ** DATA FILES to simulate a database. 
     
+** use random number generator for hours state (in lieu of unique values for employee hours)- to return all values to (2) decimal places between 4 and 8.29 - after these values are set then run 
+a refresh of the computations for each of the cols. for each staff member
+
   a.File of employees:
     Employees should all be listed in a file that can be written to. They 
     should an array of objects with the keys: last name, first name, and pay rate for the 

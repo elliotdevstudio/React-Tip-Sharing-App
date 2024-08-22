@@ -1,11 +1,22 @@
-An update and description about this project is very soon to come. Thank you for checking!
+** In progress -- Full description and purpose of this program will be released 
+with a complete MVP commit with proper documentation. This file will serve as a notepad for development, with supplemental notes in the comments (throughout the project files and in appLogicFile.txt) *** 
 
 
-<!-- # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+====== SECTIONS ======
 
-## Available Scripts
+TYPESCRIPT. 
+
+STATE MANAGEMENT.
+
+DATABASE, MOCK DATABASE FILES.
+-- Map()
+
+
+TESTING. 
+
+
+  <<<<<<<  RUNNING THIS APPLICATION  >>>>>>>
 
 In the project directory, you can run:
 
