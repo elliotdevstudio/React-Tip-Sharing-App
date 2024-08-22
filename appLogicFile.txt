@@ -18,9 +18,19 @@ LIST OF ITEMS--
 
   
 2.  ** DATA FILES to simulate a database. 
-    
+
+1st iteration --
+use a limited calendar to look back in the history. 
+Limit to two months of history. Hard code the tip amounts and the hours for each day in the DB module. The arrays should all be consistent 
+
+2nd iteration -- 
+find a library for generating a drop-down calendar that serves as the input for the month and day to select. Tie this selection to the data structure storing the staff hours -- set data rendering conditions the staff member component 
+
+
+
 ** use random number generator for hours state (in lieu of unique values for employee hours)- to return all values to (2) decimal places between 4 and 8.29 - after these values are set then run 
 a refresh of the computations for each of the cols. for each staff member
+
 
   a.File of employees:
     Employees should all be listed in a file that can be written to. They 
