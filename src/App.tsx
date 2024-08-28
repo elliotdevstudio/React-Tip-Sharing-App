@@ -1,100 +1,36 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import {
-  RecoilRoot,
-  RecoilState,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from 'recoil';
+import { RecoilRoot } from 'recoil';
+import { DailyTipSheet } from './components/DailyTipSheet';
+import { StaffGroup } from './components/StaffGroup';
 
-import './App.css';
-
-const currentDate: Date = new Date(); 
-const options: Intl.DateTimeFormatOptions = {
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-};
-
-const formattedDate: string = currentDate.toLocaleDateString(undefined, options);
-
-
-const cashTipState: RecoilState<number> = atom({
-  key:'cashTipState',
-  default: 0,
-});
-const creditCardTipState: RecoilState<number> = atom({
-  key:'creditCardTipState',
-  default: 0,
-})
-const tipSum = selector({
-  key: 'tipTotal',
-  get: ({ get }) => {
-    const cashTips = get(cashTipState);
-    const creditCardTips = get(creditCardTipState);
-    return cashTips + creditCardTips;
-  },
-});
+const sampleStaff = [
+  { id: 1, name: 'Adrian', hours: 7.5 },
+  { id: 2, name: 'Antonio', hours: 6.0 },
+  { id: 3, name: 'Francisco', hours: 8.0 },
+  { id: 4, name: 'Jorge', hours: 5.5 },
+  { id: 5, name: 'Victor', hours: 7.0 },
+];
 
 export default function App() {
   return (
     <RecoilRoot>
       <DailyTipSheet />
+      <StaffGroup title="BOH Staff" staff={sampleStaff} />
     </RecoilRoot>
-    
-    );
-  }
+  );
+}
 // create tipinput component that simply takes a number
 
-const DailyTipSheet: React.FunctionComponent = () => {
-  return (
-    <div>
-        <h1>{formattedDate}</h1><h1>Restaurant -- Tip Sharing Chart</h1>
-        <DailyTipEntry />
-        {/* <DailyAverages />
-        <StaffGroupList /> */}
-    </div>
-    
-  )
-}
 
-const DailyTipEntry: React.FunctionComponent = () => {
-  const [cashTips, setCashTips] = useRecoilState(cashTipState);
-  const [creditCardTips, setCreditCardTips] = useRecoilState(creditCardTipState);
-  const tipTotal = useRecoilValue(tipSum);
 
-  const handleCreditCardTips = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = parseFloat(e.target.value);
-    setCreditCardTips(isNaN(inputValue) ? 0 : inputValue);
-    
-  };
+
+
   
-  const handleCashTips = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = parseFloat(e.target.value);
-    setCashTips(isNaN(inputValue) ? 0 : inputValue);
-  };
 
-  return (
-    <div>
-      <label>
-        Credit Card Tips:
-        <input
-          onChange={handleCreditCardTips}
-          />
-      </label>
-      <label>
-        Cash Tips:
-        <input
-          
-          onChange={handleCashTips}
-          /></label>
-      <p>Total Tips:{tipTotal}</p>
-    </div>
-    )
-  }
+  
+  
     /*
     function StaffGroupList() {
       //** tasks to create this list */
