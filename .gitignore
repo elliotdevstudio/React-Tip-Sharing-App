@@ -23,3 +23,61 @@ yarn-debug.log*
 yarn-error.log*
 
 /appLogicFile.txt
+
+const fs = require('fs');
+const path = require('path');
+
+
+// THIS FILE WILL BE USED TO GENERATE DATA FOR ANOTHER APPLICATION
+
+//generates random hours within a range
+const getRandomHours = (min, max) => {
+  return +(Math.random() * (max - min) + min).toFixed(1);
+};
+
+# code for creating staff data 
+
+const generateStaffForDate = (date) => {
+  const dayOfWeek = date.getDay();
+  const isMondayOrTuesday = dayOfWeek === 1 || dayOfWeek === 2;
+
+  const staff = [
+    { id: 1, name: 'Adrian', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
+    { id: 2, name: 'Antonio', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
+    { id: 3, name: 'Zachary', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
+    { id: 4, name: 'Ryan', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
+    { id: 5, name: 'Alex', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
+    { id: 6, name: 'Victor', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) }
+  ];
+// using the date to pull back data once written
+  return {
+    date: date.toISOString().split('T')[0],
+    dayName: date.toLocaleString(undefined, {weekday: 'long'}),
+    staff
+  };
+};
+
+// generate the data for the full date range
+const generateData = () => {
+  const startDate = new Date('2024-04-01');
+  const endDate = new Date('2024-06-30');
+  const data = [];
+
+  let currentDate = startDate;
+  while (currentDate <= endDate) {
+    data.push(generateStaffForDate(currentDate));
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+
+  return data;
+};
+
+//generate the data
+const staffData = generateData();
+
+//write to a JSON file
+const filePath = path.join(__dirname, 'staffData.json');
+fs.writeFileSync(filePath, JSON.stringify(staffData, null, 2), 'utf-8');
+
+
+console.log(`Data generated and written to ${filePath}`);

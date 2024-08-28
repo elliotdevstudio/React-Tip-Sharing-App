@@ -12,7 +12,9 @@ import { StaffMember } from './StaffMember';
         <h2>{title}</h2>
         {staff.map(member => (
           <StaffMember key={member.id} id={member.id} name={member.name} hours={member.hours} />
-        ))};
+        ))}
       </div>
     )
-  };
+
+    
+    
