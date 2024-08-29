@@ -28,36 +28,64 @@ const fs = require('fs');
 const path = require('path');
 
 
-// THIS FILE WILL BE USED TO GENERATE DATA FOR ANOTHER APPLICATION
+// THE FOLLOWING CODE WILL BE USED TO GENERATE DATA FOR THIS APPLICATION
 
-//generates random hours within a range
-const getRandomHours = (min, max) => {
-  return +(Math.random() * (max - min) + min).toFixed(1);
-};
+const fs = require('fs');
+const path = require('path');
 
-# code for creating staff data 
+// Function to generate random hours between a given range
+const getRandomHours = (min, max) => +(Math.random() * (max - min) + min).toFixed(1);
 
-const generateStaffForDate = (date) => {
-  const dayOfWeek = date.getDay();
+// Function to generate random tips with specific conditions
+const getRandomTips = (dayOfWeek) => {
   const isMondayOrTuesday = dayOfWeek === 1 || dayOfWeek === 2;
+  const isFridayOrSaturday = dayOfWeek === 5 || dayOfWeek === 6;
 
-  const staff = [
-    { id: 1, name: 'Adrian', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
-    { id: 2, name: 'Antonio', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
-    { id: 3, name: 'Zachary', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
-    { id: 4, name: 'Ryan', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
-    { id: 5, name: 'Alex', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) },
-    { id: 6, name: 'Victor', hours: isMondayOrTuesday ? 0 : getRandomHours(4.5, 8) }
-  ];
-// using the date to pull back data once written
+  let cashMin = 17;
+  let cashMax = 91;
+  let creditCardMin = 92;
+  let creditCardMax = 387;
+
+  if (isMondayOrTuesday) {
+    return { cashTips: 0, creditCardTips: 0 };
+  } else if (isFridayOrSaturday) {
+    const cashMultiplier = 1 + (Math.random() * (0.35 - 0.25) + 0.25);
+    const creditCardMultiplier = 1 + (Math.random() * (0.35 - 0.25) + 0.25);
+
+    cashMin *= cashMultiplier;
+    cashMax *= cashMultiplier;
+    creditCardMin *= creditCardMultiplier;
+    creditCardMax *= creditCardMultiplier;
+  }
+
   return {
-    date: date.toISOString().split('T')[0],
-    dayName: date.toLocaleString(undefined, {weekday: 'long'}),
-    staff
+    cashTips: +(Math.random() * (cashMax - cashMin) + cashMin).toFixed(2),
+    creditCardTips: +(Math.random() * (creditCardMax - creditCardMin) + creditCardMin).toFixed(2),
   };
 };
 
-// generate the data for the full date range
+// Function to generate staff data for a given date
+const generateStaffForDate = (date) => {
+  const dayOfWeek = date.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+
+  const staff = [
+    { id: 1, name: 'Adrian', hours: dayOfWeek === 1 || dayOfWeek === 2 ? 0 : getRandomHours(4.5, 8) },
+    { id: 2, name: 'Antonio', hours: dayOfWeek === 1 || dayOfWeek === 2 ? 0 : getRandomHours(4.5, 8) },
+    { id: 3, name: 'Zachary', hours: dayOfWeek === 1 || dayOfWeek === 2 ? 0 : getRandomHours(4.5, 8) },
+    { id: 4, name: 'Ryan', hours: dayOfWeek === 1 || dayOfWeek === 2 ? 0 : getRandomHours(4.5, 8) },
+    { id: 5, name: 'Alex', hours: dayOfWeek === 1 || dayOfWeek === 2 ? 0 : getRandomHours(4.5, 8) },
+    { id: 6, name: 'Victor', hours: dayOfWeek === 1 || dayOfWeek === 2 ? 0 : getRandomHours(4.5, 8) },
+  ];
+
+  return {
+    date: date.toISOString().split('T')[0], // Format date as YYYY-MM-DD
+    dayName: date.toLocaleDateString(undefined, { weekday: 'long' }), // Add the name of the day
+    ...getRandomTips(dayOfWeek), // Include cashTips and creditCardTips based on the day of the week
+    staff,
+  };
+};
+
+// Function to generate data for the entire date range
 const generateData = () => {
   const startDate = new Date('2024-04-01');
   const endDate = new Date('2024-06-30');
@@ -72,12 +100,62 @@ const generateData = () => {
   return data;
 };
 
-//generate the data
+// Generate the data
 const staffData = generateData();
 
-//write to a JSON file
+// Write the data to a JSON file
 const filePath = path.join(__dirname, 'staffData.json');
 fs.writeFileSync(filePath, JSON.stringify(staffData, null, 2), 'utf-8');
 
-
 console.log(`Data generated and written to ${filePath}`);
+
+
+/*
+    function StaffGroupList() {
+      //** tasks to create this list */
+      // subscribe to tip total 
+      /**  create a file with an array of objects representing
+       *   each staff member. start with fixed percentages for each 
+       *   group to demonstrate the calculator, then add in the option
+       *   to choose the percertage-- explore ways to create that functionality
+       *   in pure functions to alter the state. might look like this at 
+       *   first: 
+       * 
+       *    const groups = [
+                kitchen staff: {
+                  employees: [
+                    David:{
+                      hours: 2, 
+                      tipout: 0, 
+                      wage: 18;
+                      dollarPerHour: 0; 
+                      percentTotalPay: 0
+                    },
+                    Antonio: {
+                      hours: 2, 
+                      tipout: 0, 
+                      wage: 18;
+                      dollarPerHour: 0; 
+                      percentTotalPay: 0
+                    },
+                    Ryan: {
+                      hours: 2, 
+                      tipout: 0, 
+                      wage: 18;
+                      dollarPerHour: 0; 
+                      percentTotalPay: 0
+                    },
+                    Peter: {
+                      hours: 6.5, 
+                      tipout: 0, 
+                      wage: 18;
+                      dollarPerHour: 0; 
+                      percentTotalPay: 0
+                    },
+                    Jorge: {
+                      hours: 5.8, 
+                      tipout: 0, 
+                      wage: 18;
+                      dollarPerHour: 0; 
+                      percentTotalPay: 0
+                    }]};

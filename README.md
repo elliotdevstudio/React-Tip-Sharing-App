@@ -5,12 +5,15 @@ with a complete MVP commit with proper documentation. This file will serve as a 
 
 ====== SECTIONS ======
 
-TYPESCRIPT. 
 
 STATE MANAGEMENT.
 
+
 DATABASE, MOCK DATABASE FILES.
 -- Map()
+
+
+TYPESCRIPT -- TYPES. 
 
 
 TESTING. 

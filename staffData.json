@@ -1,2254 +1,176 @@
 [
   {
-    "date": "2024-04-01",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.8
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.2
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.4
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.6
-      }
-    ]
-  },
-  {
-    "date": "2024-04-02",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-03",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-04",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.9
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.1
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.3
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.5
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.8
-      }
-    ]
-  },
-  {
-    "date": "2024-04-05",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.9
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 4.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.7
-      }
-    ]
-  },
-  {
-    "date": "2024-04-06",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.8
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.4
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.2
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.7
-      }
-    ]
-  },
-  {
-    "date": "2024-04-07",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.7
-      }
-    ]
-  },
-  {
-    "date": "2024-04-08",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.9
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.1
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.7
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.1
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.9
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.1
-      }
-    ]
-  },
-  {
-    "date": "2024-04-09",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-10",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-11",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.1
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.7
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.5
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.7
-      }
-    ]
-  },
-  {
-    "date": "2024-04-12",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.1
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.3
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.9
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.2
-      }
-    ]
-  },
-  {
-    "date": "2024-04-13",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.3
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.4
-      }
-    ]
-  },
-  {
-    "date": "2024-04-14",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.3
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.2
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.3
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.6
-      }
-    ]
-  },
-  {
-    "date": "2024-04-15",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.4
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.9
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.3
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.6
-      }
-    ]
-  },
-  {
-    "date": "2024-04-16",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-17",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-18",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.5
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.6
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.3
-      }
-    ]
-  },
-  {
-    "date": "2024-04-19",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.3
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.2
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.9
-      }
-    ]
-  },
-  {
-    "date": "2024-04-20",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.4
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.4
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.1
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.6
-      }
-    ]
-  },
-  {
-    "date": "2024-04-21",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.2
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.7
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.5
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.8
-      }
-    ]
-  },
-  {
-    "date": "2024-04-22",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.5
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.5
-      }
-    ]
-  },
-  {
-    "date": "2024-04-23",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-24",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-04-25",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.4
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.9
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.5
-      }
-    ]
-  },
-  {
-    "date": "2024-04-26",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.6
-      }
-    ]
-  },
-  {
-    "date": "2024-04-27",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 4.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.8
-      }
-    ]
-  },
-  {
-    "date": "2024-04-28",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 8
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.3
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.1
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.1
-      }
-    ]
-  },
-  {
-    "date": "2024-04-29",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.1
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.1
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.4
-      }
-    ]
-  },
-  {
-    "date": "2024-04-30",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-01",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-02",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.2
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.2
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.9
-      }
-    ]
-  },
-  {
-    "date": "2024-05-03",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.5
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.9
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.6
-      }
-    ]
-  },
-  {
-    "date": "2024-05-04",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.4
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.8
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.2
-      }
-    ]
-  },
-  {
-    "date": "2024-05-05",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.5
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.3
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.8
-      }
-    ]
-  },
-  {
-    "date": "2024-05-06",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 8
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.4
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.2
-      }
-    ]
-  },
-  {
-    "date": "2024-05-07",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-08",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-09",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.4
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.9
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.5
-      }
-    ]
-  },
-  {
-    "date": "2024-05-10",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.4
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.3
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.2
-      }
-    ]
-  },
-  {
-    "date": "2024-05-11",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.3
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.1
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.3
-      }
-    ]
-  },
-  {
-    "date": "2024-05-12",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.1
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.6
-      }
-    ]
-  },
-  {
-    "date": "2024-05-13",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.2
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 4.8
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.5
-      }
-    ]
-  },
-  {
-    "date": "2024-05-14",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-15",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-16",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.8
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.9
-      }
-    ]
-  },
-  {
-    "date": "2024-05-17",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.3
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.4
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.3
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.3
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.1
-      }
-    ]
-  },
-  {
-    "date": "2024-05-18",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.4
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.1
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.3
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.5
-      }
-    ]
-  },
-  {
-    "date": "2024-05-19",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 4.8
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 5.5
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.5
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.9
-      }
-    ]
-  },
-  {
-    "date": "2024-05-20",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.9
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.1
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6.7
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.5
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.9
-      }
-    ]
-  },
-  {
-    "date": "2024-05-21",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-22",
-    "dayName": "Tuesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
-    "date": "2024-05-23",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.1
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.4
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7.5
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6
-      }
-    ]
-  },
-  {
-    "date": "2024-05-24",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.2
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 4.7
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5
-      }
-    ]
-  },
-  {
-    "date": "2024-05-25",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 4.5
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.9
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 6.8
-      }
-    ]
-  },
-  {
-    "date": "2024-05-26",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 5.9
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 6.4
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.5
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 4.6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.4
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.9
-      }
-    ]
-  },
-  {
-    "date": "2024-05-27",
-    "dayName": "Sunday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7.7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.3
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.9
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7.6
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.1
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.4
-      }
-    ]
-  },
-  {
-    "date": "2024-05-28",
-    "dayName": "Monday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 0
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 0
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 0
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 0
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 0
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 0
-      }
-    ]
-  },
-  {
     "date": "2024-05-29",
-    "dayName": "Tuesday",
+    "dayName": "Wednesday",
+    "cashTips": 36.58,
+    "creditCardTips": 276.36,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 0
+        "hours": 7.5
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 0
+        "hours": 6.9
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 0
+        "hours": 7.1
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 0
+        "hours": 5.8
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 0
+        "hours": 5.2
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 0
+        "hours": 5.7
       }
     ]
   },
   {
     "date": "2024-05-30",
-    "dayName": "Wednesday",
+    "dayName": "Thursday",
+    "cashTips": 29.96,
+    "creditCardTips": 259.31,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.7
+        "hours": 4.7
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 7.2
+        "hours": 5.7
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 5.4
+        "hours": 6.3
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 4.8
+        "hours": 7.7
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 6.9
+        "hours": 7.6
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 7.9
+        "hours": 7.2
       }
     ]
   },
   {
     "date": "2024-05-31",
-    "dayName": "Thursday",
+    "dayName": "Friday",
+    "cashTips": 45.35,
+    "creditCardTips": 220.25,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 5.1
+        "hours": 5.6
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 6.6
+        "hours": 6.1
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 7.9
+        "hours": 5.2
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 7.1
+        "hours": 6.8
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.2
+        "hours": 6.5
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 6.6
+        "hours": 7
       }
     ]
   },
   {
     "date": "2024-06-01",
-    "dayName": "Friday",
+    "dayName": "Saturday",
+    "cashTips": 44.87,
+    "creditCardTips": 387.08,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.3
+        "hours": 5.5
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 5
+        "hours": 5.4
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 7.2
+        "hours": 5.7
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 5.5
+        "hours": 7.2
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 5.1
+        "hours": 7
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 6.9
+        "hours": 6.3
       }
     ]
   },
   {
     "date": "2024-06-02",
-    "dayName": "Saturday",
+    "dayName": "Sunday",
+    "cashTips": 52.69,
+    "creditCardTips": 223.64,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7.8
+        "hours": 6.9
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 5.6
+        "hours": 6.9
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6.4
+        "hours": 4.8
       },
       {
         "id": 4,
@@ -2258,54 +180,58 @@
       {
         "id": 5,
         "name": "Alex",
-        "hours": 5.2
+        "hours": 4.8
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 5.2
+        "hours": 7.7
       }
     ]
   },
   {
     "date": "2024-06-03",
-    "dayName": "Sunday",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7.5
+        "hours": 0
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 7.7
+        "hours": 0
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6
+        "hours": 0
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 4.6
+        "hours": 0
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 6.8
+        "hours": 0
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 7.9
+        "hours": 0
       }
     ]
   },
   {
     "date": "2024-06-04",
-    "dayName": "Monday",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
@@ -2341,135 +267,105 @@
   },
   {
     "date": "2024-06-05",
-    "dayName": "Tuesday",
+    "dayName": "Wednesday",
+    "cashTips": 73.06,
+    "creditCardTips": 336.22,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 0
+        "hours": 6
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 0
+        "hours": 4.6
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 0
+        "hours": 5.8
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 0
+        "hours": 7.5
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 0
+        "hours": 4.8
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 0
+        "hours": 5.9
       }
     ]
   },
   {
     "date": "2024-06-06",
-    "dayName": "Wednesday",
+    "dayName": "Thursday",
+    "cashTips": 69.86,
+    "creditCardTips": 307.69,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.6
+        "hours": 6.4
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 5.3
+        "hours": 4.6
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6.9
+        "hours": 5.7
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 6.8
+        "hours": 5.8
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.5
+        "hours": 5.5
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 6.9
+        "hours": 5
       }
     ]
   },
   {
     "date": "2024-06-07",
-    "dayName": "Thursday",
+    "dayName": "Friday",
+    "cashTips": 41.25,
+    "creditCardTips": 389.98,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7.2
+        "hours": 4.9
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 5.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
         "hours": 6.5
       },
       {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 7
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 4.6
-      }
-    ]
-  },
-  {
-    "date": "2024-06-08",
-    "dayName": "Friday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 7
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.4
-      },
-      {
         "id": 3,
         "name": "Zachary",
-        "hours": 6.1
+        "hours": 7.1
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 7.1
+        "hours": 5
       },
       {
         "id": 5,
@@ -2479,85 +375,129 @@
       {
         "id": 6,
         "name": "Victor",
-        "hours": 5.6
+        "hours": 7.7
+      }
+    ]
+  },
+  {
+    "date": "2024-06-08",
+    "dayName": "Saturday",
+    "cashTips": 92.3,
+    "creditCardTips": 158.12,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.4
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.7
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.3
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.8
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.7
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 4.5
       }
     ]
   },
   {
     "date": "2024-06-09",
-    "dayName": "Saturday",
+    "dayName": "Sunday",
+    "cashTips": 60.92,
+    "creditCardTips": 356.9,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 5.6
+        "hours": 5.9
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 6.2
+        "hours": 6.1
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 5.8
+        "hours": 5.4
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 5.5
+        "hours": 5.2
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.1
+        "hours": 8
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 7.9
+        "hours": 7.1
       }
     ]
   },
   {
     "date": "2024-06-10",
-    "dayName": "Sunday",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7
+        "hours": 0
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 7.9
+        "hours": 0
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 4.9
+        "hours": 0
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 5.6
+        "hours": 0
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 6.4
+        "hours": 0
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 7.4
+        "hours": 0
       }
     ]
   },
   {
     "date": "2024-06-11",
-    "dayName": "Monday",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
@@ -2593,84 +533,52 @@
   },
   {
     "date": "2024-06-12",
-    "dayName": "Tuesday",
+    "dayName": "Wednesday",
+    "cashTips": 49.1,
+    "creditCardTips": 340.48,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 0
+        "hours": 7.5
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 0
+        "hours": 6.7
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 0
+        "hours": 5.9
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 0
+        "hours": 7.4
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 0
+        "hours": 5.1
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 0
+        "hours": 6.4
       }
     ]
   },
   {
     "date": "2024-06-13",
-    "dayName": "Wednesday",
+    "dayName": "Thursday",
+    "cashTips": 37.08,
+    "creditCardTips": 230.09,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
         "hours": 7.9
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.5
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.6
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.2
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 5.6
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 5.9
-      }
-    ]
-  },
-  {
-    "date": "2024-06-14",
-    "dayName": "Thursday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.7
       },
       {
         "id": 2,
@@ -2680,105 +588,111 @@
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6.1
+        "hours": 7.9
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 5.7
+        "hours": 5.1
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.9
+        "hours": 6.7
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 6.3
+        "hours": 7.6
+      }
+    ]
+  },
+  {
+    "date": "2024-06-14",
+    "dayName": "Friday",
+    "cashTips": 103.96,
+    "creditCardTips": 292.77,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.2
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.7
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.8
       }
     ]
   },
   {
     "date": "2024-06-15",
-    "dayName": "Friday",
+    "dayName": "Saturday",
+    "cashTips": 43.38,
+    "creditCardTips": 468.62,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.9
+        "hours": 5.8
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 4.8
+        "hours": 7.3
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 4.7
+        "hours": 5
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 6.8
+        "hours": 7.2
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 5.8
+        "hours": 5.3
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 7.4
+        "hours": 7.9
       }
     ]
   },
   {
     "date": "2024-06-16",
-    "dayName": "Saturday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.6
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 5.1
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 4.8
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 5.8
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.8
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.1
-      }
-    ]
-  },
-  {
-    "date": "2024-06-17",
     "dayName": "Sunday",
+    "cashTips": 75.98,
+    "creditCardTips": 326.87,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.7
+        "hours": 7
       },
       {
         "id": 2,
@@ -2788,28 +702,68 @@
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 4.8
+        "hours": 6.2
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 4.7
+        "hours": 5.5
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 5.7
+        "hours": 5.9
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 5
+        "hours": 5.3
+      }
+    ]
+  },
+  {
+    "date": "2024-06-17",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
       }
     ]
   },
   {
     "date": "2024-06-18",
-    "dayName": "Monday",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
@@ -2845,84 +799,52 @@
   },
   {
     "date": "2024-06-19",
-    "dayName": "Tuesday",
+    "dayName": "Wednesday",
+    "cashTips": 39.27,
+    "creditCardTips": 369.37,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 0
+        "hours": 6.7
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 0
+        "hours": 5.9
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 0
+        "hours": 7.5
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 0
+        "hours": 7.1
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 0
+        "hours": 4.8
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 0
+        "hours": 5.4
       }
     ]
   },
   {
     "date": "2024-06-20",
-    "dayName": "Wednesday",
-    "staff": [
-      {
-        "id": 1,
-        "name": "Adrian",
-        "hours": 6.3
-      },
-      {
-        "id": 2,
-        "name": "Antonio",
-        "hours": 7.6
-      },
-      {
-        "id": 3,
-        "name": "Zachary",
-        "hours": 7.4
-      },
-      {
-        "id": 4,
-        "name": "Ryan",
-        "hours": 6.9
-      },
-      {
-        "id": 5,
-        "name": "Alex",
-        "hours": 6.7
-      },
-      {
-        "id": 6,
-        "name": "Victor",
-        "hours": 7.9
-      }
-    ]
-  },
-  {
-    "date": "2024-06-21",
     "dayName": "Thursday",
+    "cashTips": 35.53,
+    "creditCardTips": 209.78,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7.4
+        "hours": 5.7
       },
       {
         "id": 2,
@@ -2932,7 +854,45 @@
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 7.8
+        "hours": 5.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.4
+      }
+    ]
+  },
+  {
+    "date": "2024-06-21",
+    "dayName": "Friday",
+    "cashTips": 76.73,
+    "creditCardTips": 165.97,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.5
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5
       },
       {
         "id": 4,
@@ -2942,64 +902,68 @@
       {
         "id": 5,
         "name": "Alex",
-        "hours": 6.7
+        "hours": 4.6
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 6.9
+        "hours": 4.7
       }
     ]
   },
   {
     "date": "2024-06-22",
-    "dayName": "Friday",
+    "dayName": "Saturday",
+    "cashTips": 91.91,
+    "creditCardTips": 303.88,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.2
+        "hours": 7.8
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 5.6
+        "hours": 7.2
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 7.7
+        "hours": 6
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 7.3
+        "hours": 6.2
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.8
+        "hours": 7
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 4.9
+        "hours": 6.5
       }
     ]
   },
   {
     "date": "2024-06-23",
-    "dayName": "Saturday",
+    "dayName": "Sunday",
+    "cashTips": 72.4,
+    "creditCardTips": 353.58,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7.5
+        "hours": 6.8
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 6.6
+        "hours": 5.2
       },
       {
         "id": 3,
@@ -3014,54 +978,58 @@
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.9
+        "hours": 7.7
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 5.6
+        "hours": 6.3
       }
     ]
   },
   {
     "date": "2024-06-24",
-    "dayName": "Sunday",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 5.6
+        "hours": 0
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 6.4
+        "hours": 0
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6
+        "hours": 0
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 7.3
+        "hours": 0
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 6.4
+        "hours": 0
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 6.2
+        "hours": 0
       }
     ]
   },
   {
     "date": "2024-06-25",
-    "dayName": "Monday",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
     "staff": [
       {
         "id": 1,
@@ -3097,104 +1065,110 @@
   },
   {
     "date": "2024-06-26",
-    "dayName": "Tuesday",
+    "dayName": "Wednesday",
+    "cashTips": 34.21,
+    "creditCardTips": 248.47,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 0
+        "hours": 6.5
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 0
+        "hours": 7.3
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 0
+        "hours": 7.8
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 0
+        "hours": 5.4
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 0
+        "hours": 5.1
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 0
+        "hours": 5.9
       }
     ]
   },
   {
     "date": "2024-06-27",
-    "dayName": "Wednesday",
+    "dayName": "Thursday",
+    "cashTips": 81.13,
+    "creditCardTips": 208.4,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 7.2
+        "hours": 7.3
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 7
+        "hours": 4.9
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6.7
+        "hours": 7.3
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 5.6
+        "hours": 7.9
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.1
+        "hours": 5.1
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 7.5
+        "hours": 5.1
       }
     ]
   },
   {
     "date": "2024-06-28",
-    "dayName": "Thursday",
+    "dayName": "Friday",
+    "cashTips": 35.73,
+    "creditCardTips": 354.77,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.7
+        "hours": 5.9
       },
       {
         "id": 2,
         "name": "Antonio",
-        "hours": 6.8
+        "hours": 6.6
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 6.7
+        "hours": 6.2
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 7.5
+        "hours": 7
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.3
+        "hours": 5.4
       },
       {
         "id": 6,
@@ -3205,7 +1179,313 @@
   },
   {
     "date": "2024-06-29",
+    "dayName": "Saturday",
+    "cashTips": 82.54,
+    "creditCardTips": 306.37,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.7
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.1
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.1
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.7
+      }
+    ]
+  },
+  {
+    "date": "2024-06-30",
+    "dayName": "Sunday",
+    "cashTips": 49.77,
+    "creditCardTips": 127.47,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.2
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.7
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.2
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.8
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.3
+      }
+    ]
+  },
+  {
+    "date": "2024-07-01",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-02",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-03",
+    "dayName": "Wednesday",
+    "cashTips": 82.92,
+    "creditCardTips": 165.34,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 4.9
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.7
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.8
+      }
+    ]
+  },
+  {
+    "date": "2024-07-04",
+    "dayName": "Thursday",
+    "cashTips": 63.05,
+    "creditCardTips": 193.76,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.5
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.6
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 4.7
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.9
+      }
+    ]
+  },
+  {
+    "date": "2024-07-05",
     "dayName": "Friday",
+    "cashTips": 26.28,
+    "creditCardTips": 486.86,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 4.5
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.9
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.1
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 8
+      }
+    ]
+  },
+  {
+    "date": "2024-07-06",
+    "dayName": "Saturday",
+    "cashTips": 36.52,
+    "creditCardTips": 317.89,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.6
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.3
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.1
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.8
+      }
+    ]
+  },
+  {
+    "date": "2024-07-07",
+    "dayName": "Sunday",
+    "cashTips": 44.24,
+    "creditCardTips": 227.78,
     "staff": [
       {
         "id": 1,
@@ -3215,38 +1495,192 @@
       {
         "id": 2,
         "name": "Antonio",
+        "hours": 7.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.4
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.2
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.7
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.3
+      }
+    ]
+  },
+  {
+    "date": "2024-07-08",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-09",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-10",
+    "dayName": "Wednesday",
+    "cashTips": 75.34,
+    "creditCardTips": 370.82,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.7
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 4.5
+      }
+    ]
+  },
+  {
+    "date": "2024-07-11",
+    "dayName": "Thursday",
+    "cashTips": 30.04,
+    "creditCardTips": 310.19,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.1
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
         "hours": 7
       },
       {
         "id": 3,
         "name": "Zachary",
-        "hours": 7.3
+        "hours": 6.8
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 5.5
+        "hours": 6.6
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 7.3
+        "hours": 7.9
       },
       {
         "id": 6,
         "name": "Victor",
-        "hours": 5.6
+        "hours": 5
       }
     ]
   },
   {
-    "date": "2024-06-30",
-    "dayName": "Saturday",
+    "date": "2024-07-12",
+    "dayName": "Friday",
+    "cashTips": 116.02,
+    "creditCardTips": 313.52,
     "staff": [
       {
         "id": 1,
         "name": "Adrian",
-        "hours": 6.2
+        "hours": 5.1
       },
       {
         "id": 2,
@@ -3256,22 +1690,1846 @@
       {
         "id": 3,
         "name": "Zachary",
+        "hours": 4.7
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.7
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7
+      }
+    ]
+  },
+  {
+    "date": "2024-07-13",
+    "dayName": "Saturday",
+    "cashTips": 46.52,
+    "creditCardTips": 162.91,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.2
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.1
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.4
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.4
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.8
+      }
+    ]
+  },
+  {
+    "date": "2024-07-14",
+    "dayName": "Sunday",
+    "cashTips": 69.41,
+    "creditCardTips": 111.43,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.1
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.9
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.5
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.4
+      }
+    ]
+  },
+  {
+    "date": "2024-07-15",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-16",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-17",
+    "dayName": "Wednesday",
+    "cashTips": 21.51,
+    "creditCardTips": 298.21,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.5
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.3
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.4
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7
+      }
+    ]
+  },
+  {
+    "date": "2024-07-18",
+    "dayName": "Thursday",
+    "cashTips": 47.97,
+    "creditCardTips": 377.3,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.9
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.4
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 4.6
+      }
+    ]
+  },
+  {
+    "date": "2024-07-19",
+    "dayName": "Friday",
+    "cashTips": 102.91,
+    "creditCardTips": 183.73,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.3
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.8
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.7
+      }
+    ]
+  },
+  {
+    "date": "2024-07-20",
+    "dayName": "Saturday",
+    "cashTips": 85.19,
+    "creditCardTips": 255.37,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.1
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.9
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.2
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.7
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.4
+      }
+    ]
+  },
+  {
+    "date": "2024-07-21",
+    "dayName": "Sunday",
+    "cashTips": 30.14,
+    "creditCardTips": 244.51,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 4.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.2
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.7
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.3
+      }
+    ]
+  },
+  {
+    "date": "2024-07-22",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-23",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-24",
+    "dayName": "Wednesday",
+    "cashTips": 65.77,
+    "creditCardTips": 194.26,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.4
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.9
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.3
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.3
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.4
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.7
+      }
+    ]
+  },
+  {
+    "date": "2024-07-25",
+    "dayName": "Thursday",
+    "cashTips": 52.6,
+    "creditCardTips": 255.1,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.1
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.6
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.9
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.3
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 8
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.2
+      }
+    ]
+  },
+  {
+    "date": "2024-07-26",
+    "dayName": "Friday",
+    "cashTips": 74.11,
+    "creditCardTips": 199.92,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.1
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.5
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.3
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.9
+      }
+    ]
+  },
+  {
+    "date": "2024-07-27",
+    "dayName": "Saturday",
+    "cashTips": 113.88,
+    "creditCardTips": 289.07,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.4
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.7
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.3
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.8
+      }
+    ]
+  },
+  {
+    "date": "2024-07-28",
+    "dayName": "Sunday",
+    "cashTips": 47.32,
+    "creditCardTips": 340.27,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.5
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.4
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 4.6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.9
+      }
+    ]
+  },
+  {
+    "date": "2024-07-29",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-30",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-07-31",
+    "dayName": "Wednesday",
+    "cashTips": 27.92,
+    "creditCardTips": 227.26,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.6
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.6
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.1
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.6
+      }
+    ]
+  },
+  {
+    "date": "2024-08-01",
+    "dayName": "Thursday",
+    "cashTips": 72.16,
+    "creditCardTips": 93.73,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 4.6
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.6
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.7
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.7
+      }
+    ]
+  },
+  {
+    "date": "2024-08-02",
+    "dayName": "Friday",
+    "cashTips": 96.02,
+    "creditCardTips": 163.72,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.6
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.1
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.9
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 4.6
+      }
+    ]
+  },
+  {
+    "date": "2024-08-03",
+    "dayName": "Saturday",
+    "cashTips": 61.73,
+    "creditCardTips": 337.95,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.3
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.5
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.7
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.2
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.1
+      }
+    ]
+  },
+  {
+    "date": "2024-08-04",
+    "dayName": "Sunday",
+    "cashTips": 75.21,
+    "creditCardTips": 344.25,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.7
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 4.9
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.8
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.8
+      }
+    ]
+  },
+  {
+    "date": "2024-08-05",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-06",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-07",
+    "dayName": "Wednesday",
+    "cashTips": 64.87,
+    "creditCardTips": 115.56,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.7
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.2
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 4.9
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.8
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.8
+      }
+    ]
+  },
+  {
+    "date": "2024-08-08",
+    "dayName": "Thursday",
+    "cashTips": 48.27,
+    "creditCardTips": 238.45,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.3
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.2
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.9
+      }
+    ]
+  },
+  {
+    "date": "2024-08-09",
+    "dayName": "Friday",
+    "cashTips": 88.12,
+    "creditCardTips": 200.44,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.7
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.1
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.8
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.7
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.3
+      }
+    ]
+  },
+  {
+    "date": "2024-08-10",
+    "dayName": "Saturday",
+    "cashTips": 58.21,
+    "creditCardTips": 136.24,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.9
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.7
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.9
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.5
+      }
+    ]
+  },
+  {
+    "date": "2024-08-11",
+    "dayName": "Sunday",
+    "cashTips": 32.26,
+    "creditCardTips": 365.54,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.9
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 4.5
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.3
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 4.8
+      }
+    ]
+  },
+  {
+    "date": "2024-08-12",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-13",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-14",
+    "dayName": "Wednesday",
+    "cashTips": 59.25,
+    "creditCardTips": 281.71,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.3
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.9
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.5
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.4
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.5
+      }
+    ]
+  },
+  {
+    "date": "2024-08-15",
+    "dayName": "Thursday",
+    "cashTips": 17.74,
+    "creditCardTips": 170.17,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.4
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.9
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.7
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.1
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.3
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.6
+      }
+    ]
+  },
+  {
+    "date": "2024-08-16",
+    "dayName": "Friday",
+    "cashTips": 65.78,
+    "creditCardTips": 439.77,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.9
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.5
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 5.9
+      }
+    ]
+  },
+  {
+    "date": "2024-08-17",
+    "dayName": "Saturday",
+    "cashTips": 107.92,
+    "creditCardTips": 329.73,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.3
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.2
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 7.7
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.5
+      }
+    ]
+  },
+  {
+    "date": "2024-08-18",
+    "dayName": "Sunday",
+    "cashTips": 72.5,
+    "creditCardTips": 221.23,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.2
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
         "hours": 5.1
       },
       {
         "id": 4,
         "name": "Ryan",
-        "hours": 6.4
+        "hours": 5.2
       },
       {
         "id": 5,
         "name": "Alex",
-        "hours": 5.9
+        "hours": 6.5
       },
       {
         "id": 6,
         "name": "Victor",
+        "hours": 8
+      }
+    ]
+  },
+  {
+    "date": "2024-08-19",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-20",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-21",
+    "dayName": "Wednesday",
+    "cashTips": 20.93,
+    "creditCardTips": 305.39,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.6
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 4.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.6
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 4.8
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 4.9
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7
+      }
+    ]
+  },
+  {
+    "date": "2024-08-22",
+    "dayName": "Thursday",
+    "cashTips": 69.12,
+    "creditCardTips": 262.94,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.8
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 7.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 7.4
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.5
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.6
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.8
+      }
+    ]
+  },
+  {
+    "date": "2024-08-23",
+    "dayName": "Friday",
+    "cashTips": 104.94,
+    "creditCardTips": 223.53,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 6.9
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.7
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.1
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 5.2
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.9
+      }
+    ]
+  },
+  {
+    "date": "2024-08-24",
+    "dayName": "Saturday",
+    "cashTips": 29.76,
+    "creditCardTips": 218.79,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 7.4
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 4.9
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.1
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 4.6
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.9
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.8
+      }
+    ]
+  },
+  {
+    "date": "2024-08-25",
+    "dayName": "Sunday",
+    "cashTips": 32.88,
+    "creditCardTips": 303.21,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.7
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.4
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 5.6
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 6.8
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.4
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 6.1
+      }
+    ]
+  },
+  {
+    "date": "2024-08-26",
+    "dayName": "Monday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-27",
+    "dayName": "Tuesday",
+    "cashTips": 0,
+    "creditCardTips": 0,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 0
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 0
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 0
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 0
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 0
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 0
+      }
+    ]
+  },
+  {
+    "date": "2024-08-28",
+    "dayName": "Wednesday",
+    "cashTips": 49.92,
+    "creditCardTips": 218.1,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.3
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 6.2
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 4.8
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
         "hours": 5.1
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 6.3
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 4.6
+      }
+    ]
+  },
+  {
+    "date": "2024-08-29",
+    "dayName": "Thursday",
+    "cashTips": 63.79,
+    "creditCardTips": 298.11,
+    "staff": [
+      {
+        "id": 1,
+        "name": "Adrian",
+        "hours": 5.1
+      },
+      {
+        "id": 2,
+        "name": "Antonio",
+        "hours": 5.8
+      },
+      {
+        "id": 3,
+        "name": "Zachary",
+        "hours": 6.3
+      },
+      {
+        "id": 4,
+        "name": "Ryan",
+        "hours": 5.8
+      },
+      {
+        "id": 5,
+        "name": "Alex",
+        "hours": 7.2
+      },
+      {
+        "id": 6,
+        "name": "Victor",
+        "hours": 7.1
       }
     ]
   }

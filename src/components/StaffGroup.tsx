@@ -16,5 +16,4 @@ import { StaffMember } from './StaffMember';
       </div>
     )
 
-    
-    
+  }
