@@ -3,10 +3,10 @@ import { StaffMember } from './StaffMember';
 
   type StaffGroupProps = {
     title: string;
-    staff: { id: number; name: string; hours: number }[];
+    staff: { id: number; name: string; hours: number, tipOutAmount: number }[];
     isEditingStaffHours:boolean;
     onEditStaffHours: () => void;
-    onSaveStaffHours: (updatedStaff: { id: number; name: string; hours: number }[]) => void;
+    onSaveStaffHours: (updatedStaff: { id: number; name: string; hours: number, tipOutAmount: number }[]) => void;
   }
 
   export const StaffGroup: React.FC<StaffGroupProps> = ({
@@ -37,6 +37,7 @@ import { StaffMember } from './StaffMember';
             id={member.id}
             name={member.name}
             hours={member.hours}
+            tipOutAmount={member.tipOutAmount}
             isEditing={isEditingStaffHours}
             onHoursChange={handleHoursChange}
           />

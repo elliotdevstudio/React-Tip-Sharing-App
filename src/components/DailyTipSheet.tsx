@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StaffGroup } from './StaffGroup';
-import { useRecoilState, useRecoilValue } from 'recoil';
-import { cashTipState, creditCardTipState, tipSum } from '../recoilStore';
+// import { useRecoilState, useRecoilValue } from 'recoil';
+// import { cashTipState, creditCardTipState, tipSum } from '../recoilStore';
 
 const currentDate: Date = new Date(); 
 const options: Intl.DateTimeFormatOptions = {
@@ -16,6 +16,7 @@ type StaffMember = {
   id: number;
   name: string;
   hours: number;
+  tipOutAmount: number;
 }
 
 type StaffData = {
@@ -39,27 +40,65 @@ export const DailyTipSheet: React.FunctionComponent = () => {
   const [isEditingStaffHours, setIsEditingStaffHours] = useState(false);
   const [cashTipsInput, setCashTipsInput] = useState<number>(0);
 
+  const calculateTipOutAmounts = (staff: StaffMember[], cashTips: number, creditCardTips: number) => {
+    const tipTotal = cashTips + creditCardTips;
+    const totalHours = staff.reduce((sum, member) => sum + member.hours, 0);
+    const tipOutRate = totalHours > 0 ? tipTotal / totalHours : 0;
+
+    return staff.map(member => ({
+      ...member,
+      tipOutAmount: member.hours * tipOutRate
+    }));
+  };
   useEffect (() => {
+    //handles updates to saved changes for staff hours and cash tips
     const today = new Date().toISOString().split('T')[0];
 
     const generatedStaff = [
-      {id: 1, name: 'Adrian', hours: getRandomHours(4.5, 8) },
-      {id: 2, name: 'Antonio', hours: getRandomHours(4.5, 8) },
-      {id: 3, name: 'Zachary', hours: getRandomHours(4.5, 8) },
-      {id: 4, name: 'Ryan', hours: getRandomHours(4.5, 8) },
-      {id: 5, name: 'Alex', hours: getRandomHours(4.5, 8) },
-      {id: 6, name: 'Victor', hours: getRandomHours(4.5, 8) }
+      {id: 1, name: 'Adrian', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
+      {id: 2, name: 'Antonio', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
+      {id: 3, name: 'Zachary', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
+      {id: 4, name: 'Ryan', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
+      {id: 5, name: 'Alex', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
+      {id: 6, name: 'Victor', hours: getRandomHours(4.5, 8), tipOutAmount: 0 }
     ];
 
     const generatedData: StaffData = {
       cashTips: 0, // sets cash Tips to zero on load
       creditCardTips: getRandomTips(92, 387), // Set rand. CC tips
       staff: generatedStaff,
-    };
+      
+    }
+    const tipTotal = generatedData.cashTips + generatedData.creditCardTips;
+    const totalHours = generatedData.staff.reduce((sum, member) => sum + member.hours, 0);
+    const tipOutRate = totalHours > 0 ? tipTotal / totalHours : 0;
 
-    setData(generatedData); // Sets generated data to state
+    const updatedStaff = generatedData.staff.map(member => ({
+      ...member,
+      tipOutAmount: member.hours * tipOutRate,
+    }));
+
+    setData({ ...generatedData, staff: updatedStaff }); // Sets generated data to state
   }, []);
 
+  useEffect(() => {
+    if (data) {
+      // computes the tipTotal and tipOut rate after changes
+      const tipTotal = data.cashTips + data.creditCardTips;
+      const totalHours = data.staff.reduce((sum, member) => sum + member.hours, 0);
+      const tipOutRate = totalHours > 0 ? tipTotal / totalHours : 0;
+
+      //updates tip amount for each staff member
+      const updatedStaff = data.staff.map(member => ({
+        ...member, 
+        tipOutAmount: member.hours * tipOutRate,
+      }))
+
+      setData({ ...data, staff: updatedStaff });
+    }
+  }, [data?.cashTips, data?.staff]);
+
+  
   const handleCashTipsSave = () => {
     if (data) {
       setData({...data, cashTips: cashTipsInput });

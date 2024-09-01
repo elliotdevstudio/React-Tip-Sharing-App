@@ -4,6 +4,7 @@ type StaffMemberProps = {
   id: number;
   name: string; 
   hours: number;
+  tipOutAmount: number;
   isEditing: boolean;
   onHoursChange: (id: number, hours: number) => void;
 }
@@ -12,6 +13,7 @@ export const StaffMember: React.FC<StaffMemberProps> = ({
   id,
   name,
   hours,
+  tipOutAmount,
   isEditing,
   onHoursChange,
 }) => {
@@ -27,6 +29,7 @@ export const StaffMember: React.FC<StaffMemberProps> = ({
       ) : (
         <span>{hours} hours</span>
       )}
+        <span> | Tip Out: ${tipOutAmount.toFixed(2)}</span>
     </div>
   )
 }
