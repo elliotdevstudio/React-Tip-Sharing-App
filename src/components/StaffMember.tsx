@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 type StaffMemberProps = {
   id: number;
   name: string; 
@@ -8,6 +9,7 @@ type StaffMemberProps = {
   isEditing: boolean;
   onHoursChange: (id: number, hours: number) => void;
 }
+
 
 export const StaffMember: React.FC<StaffMemberProps> = ({ 
   id,
