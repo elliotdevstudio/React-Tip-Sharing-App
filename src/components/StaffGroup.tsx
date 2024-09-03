@@ -1,48 +1,46 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { StaffMember } from './StaffMember';
+import { StaffMemberType } from '../types';
 
   type StaffGroupProps = {
     title: string;
-    staff: { id: number; name: string; hours: number }[];
-    isEditingStaffHours:boolean;
+    staff: StaffMemberType[];
+    isEditingStaffHours: boolean;
+    onSaveStaffHours: (updatedStaff: StaffMemberType[]) => void;
     onEditStaffHours: () => void;
-    onSaveStaffHours: (updatedStaff: { id: number; name: string; hours: number }[]) => void;
   }
 
   export const StaffGroup: React.FC<StaffGroupProps> = ({
     title, 
     staff,
-    isEditingStaffHours,
-    onEditStaffHours,
+    isEditingStaffHours,  // <-- Ensure this prop is used
     onSaveStaffHours,
+    onEditStaffHours
   }) => {
-    const [updatedStaff, setUpdatedStaff] = useState(staff);
 
     const handleHoursChange = (id: number, hours: number) => {
-      setUpdatedStaff(updatedStaff.map(member => member.id === id ? {...member, hours } : member));
-    };
-
-    const handleSave = () => {
+      const updatedStaff = staff.map(member => 
+        member.id === id ? { ...member, hours } : member
+      );
       onSaveStaffHours(updatedStaff);
-    }
+    };
+    
     return (
       <div>
         <h2>
           {title}
-          {!isEditingStaffHours && <button onClick={onEditStaffHours}>Edit Staff Hours</button>}
         </h2>
-        {updatedStaff.map(member => (
+        {staff.map(member => (
           <StaffMember
             key={member.id}
             id={member.id}
             name={member.name}
             hours={member.hours}
+            tipOutAmount={member.tipOutAmount}
             isEditing={isEditingStaffHours}
             onHoursChange={handleHoursChange}
           />
         ))}
-        {isEditingStaffHours && <button onClick={handleSave}>Save</button>}
       </div>
     )
-
   }
