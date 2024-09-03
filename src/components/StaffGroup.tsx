@@ -13,9 +13,8 @@ import { StaffMemberType } from '../types';
   export const StaffGroup: React.FC<StaffGroupProps> = ({
     title, 
     staff,
-    isEditingStaffHours,  // <-- Ensure this prop is used
+    isEditingStaffHours,  
     onSaveStaffHours,
-    onEditStaffHours
   }) => {
 
     const handleHoursChange = (id: number, hours: number) => {

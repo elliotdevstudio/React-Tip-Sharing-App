@@ -26,7 +26,7 @@ export const StaffMember: React.FC<StaffMemberProps> = ({
 
   const handleToggleEdit = () => {
     if (isEditing) {
-      // Trigger update with new hours when editing is saved
+      // Triggers update with new hours 
       onHoursChange(id, inputHours);
     }
     setIsEditing(!isEditing); // Toggles editing state

@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { StaffGroup } from './StaffGroup';
-// import {StaffMember} from './StaffMember';
-import type { StaffMemberType, StaffData } from '../types';
+import type { StaffMemberType } from '../types';
 import { cashTipState, creditCardTipState, tipOutAmountState, staffDataState } from '../recoilStore';
-import { getRandomHours } from "../utils";
 
 const currentDate: Date = new Date(); 
 const options: Intl.DateTimeFormatOptions = {
@@ -13,11 +11,8 @@ const options: Intl.DateTimeFormatOptions = {
   year: 'numeric',
 };
 
+// Today's date displayed on the landing page for the current daily entry 
 const formattedDate: string = currentDate.toLocaleDateString(undefined, options);
-
-
-//function to generate random hours and tips
-
 
 export const DailyTipSheet: React.FunctionComponent = () => {
   const [cashTips, setCashTips] = useRecoilState(cashTipState);
@@ -29,33 +24,15 @@ export const DailyTipSheet: React.FunctionComponent = () => {
   const [isEditingStaffHours, setIsEditingStaffHours] = useState(false);
   const [cashTipsInput, setCashTipsInput] = useState<number>(cashTips);
 
-  // useEffect(() => {
-  //   if (staff.length === 0) { // Check if staff data is empty to avoid re-initialization
-  //     const initialStaff = [
-  //       { id: 1, name: 'Adrian', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
-  //       { id: 2, name: 'Antonio', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
-  //       { id: 3, name: 'Zachary', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
-  //       { id: 4, name: 'Ryan', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
-  //       { id: 5, name: 'Alex', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
-  //       { id: 6, name: 'Victor', hours: getRandomHours(4.5, 8), tipOutAmount: 0 },
-  //     ];
-
-  //     setStaff(initialStaff); // Set initial staff data with generated hours
-  //   }
-  // }, []);
-
   const handleCashTipsSave = () => {
     setCashTips(cashTipsInput);
     setIsEditingCashTips(false);
   };
   const handleStaffHoursSave = (updatedStaff: StaffMemberType[]) => {
     setStaff(updatedStaff); // Update the Recoil state with the new staff data
-    setIsEditingStaffHours(false); // Stop editing mode
+    setIsEditingStaffHours(false); // Stops editing mode
   };
   
-
-  
-
   return (
     <div>
       <h1>{formattedDate} Restaurant -- Tip Sharing Chart</h1>
@@ -90,4 +67,5 @@ export const DailyTipSheet: React.FunctionComponent = () => {
       />
     </div>
   );
+
 };
