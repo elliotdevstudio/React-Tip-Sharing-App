@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { StaffMember } from './StaffMember';
 import { StaffMemberType } from '../types';
 
   type StaffGroupProps = {
     title: string;
     staff: StaffMemberType[];
-    isEditingStaffHours:boolean;
+    isEditingStaffHours: boolean;
     onSaveStaffHours: (updatedStaff: StaffMemberType[]) => void;
     onEditStaffHours: () => void;
   }
@@ -13,9 +13,9 @@ import { StaffMemberType } from '../types';
   export const StaffGroup: React.FC<StaffGroupProps> = ({
     title, 
     staff,
-    isEditingStaffHours,
+    isEditingStaffHours,  // <-- Ensure this prop is used
     onSaveStaffHours,
-    onEditStaffHours,
+    onEditStaffHours
   }) => {
 
     const handleHoursChange = (id: number, hours: number) => {
@@ -41,7 +41,6 @@ import { StaffMemberType } from '../types';
             onHoursChange={handleHoursChange}
           />
         ))}
-        {isEditingStaffHours && <button onClick={onEditStaffHours}>Save</button>}
       </div>
     )
   }
