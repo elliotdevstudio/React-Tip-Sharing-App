@@ -1,14 +1,8 @@
 import React from 'react';
 import { StaffMember } from './StaffMember';
-import { StaffMemberType } from '../types';
+import { StaffMemberType, StaffGroupProps } from '../types';
 
-  type StaffGroupProps = {
-    title: string;
-    staff: StaffMemberType[];
-    isEditingStaffHours: boolean;
-    onSaveStaffHours: (updatedStaff: StaffMemberType[]) => void;
-    onEditStaffHours: () => void;
-  }
+  
 
   export const StaffGroup: React.FC<StaffGroupProps> = ({
     title, 
