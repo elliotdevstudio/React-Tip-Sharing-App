@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { StaffMember } from './StaffMember';
-import { StaffMemberType, StaffGroupProps } from '../types';
+import { StaffMemberType, StaffGroupProps } from '../../types';
 
   
 
