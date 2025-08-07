@@ -6,8 +6,8 @@ interface StaffMemberCardProps {
 
 export default function StaffMemberCard({ member }: StaffMemberCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-      <h3 className="text-lg font-semibold text-gray-900">
+    <div className="bg-white rounded-lg shadow-md p-3 hover:shadow-lg transition-shadow">
+      <h3 className="text-md font-semibold text-gray-900">
         {member.firstName} {member.lastName}
       </h3>
       <p className="text-sm text-gray-500 mt-1">

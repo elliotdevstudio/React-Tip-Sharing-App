@@ -1,31 +1,19 @@
-// 'use client'
+import { getRandomTips } from "../utils";
 
-// import  { 
-//   atom
-// } from 'jotai';
+// Tip atoms - three sources
 
-// import { mockStaffMembers } from '../lib/mock-data';
-// import { getRandomTips } from "../utils";
-
-// // Staff roster (master list of all staff)
-// export const staffMemberState = atom(mockStaffMembers)
-
-// // Current active staff group (working today)
-// export const activeStaffGroupState = atom<StaffMember[]>([])
-
-// // All staff groups created
-// export const StaffGroupState = atom<StaffGroup[]>([])
-
-// // Tip atoms - three sources
-// // export const cashTipState = atom(0);
 // export const creditCardTipState = atom(0);
+// export const cashierCreditCardTipState = atom();
 // export const cashierCreditCardTipState = atom(() => getRandomCashierTips(75, 185))
 
-// // export const totalTipState = atom((get)=> {
-// //   const cashTips = get(cashTipState);
-// //   const creditCardTips = get(creditCardTipState);
-// //   return cashTips + creditCardTips
-// // })
+// ALL OF THE BELOW IS FROM FIRST INTERATION OF THE BASIC LOGIC
+// --- KEEPING FOR REFERENCE AS MORE 
+
+// export const totalTipState = atom((get)=> {
+//   const cashTips = get(cashTipState);
+//   const creditCardTips = get(creditCardTipState);
+//   return cashTips + creditCardTips
+// })
   
 // export const totalHoursState = atom((get) => {
 //   const staff = get(staffDataState)

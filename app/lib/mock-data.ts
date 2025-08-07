@@ -1,4 +1,4 @@
-import { StaffMember, AnyStaffGroup, DailyHoursEntry } from '../../atoms/atoms';
+import { StaffMember } from "../../types";
 
 export const mockStaffMembers: StaffMember[] = [
   {
