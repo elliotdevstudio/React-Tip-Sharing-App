@@ -4,7 +4,7 @@ import  {
   atom
 } from 'jotai';
 import { StaffMember, AnyStaffGroup, StaffGroupFormState, NestedGroupCreationState } from '../../types';
-import { mockStaffMembers } from '../lib/mock-data';
+import { mockStaffMembers } from '../../mock-data';
 
 
 // Staff roster (master list of all staff)
@@ -18,6 +18,7 @@ export const staffGroupFormAtom = atom<StaffGroupFormState>({
   description: '',
   selectedStaffMemberIds: [],
   distributesGratuities: undefined,
+  receivesGratuities: undefined,
   sourceGroupIds: undefined,
   distributionType: undefined,
   fixedAmount: undefined,

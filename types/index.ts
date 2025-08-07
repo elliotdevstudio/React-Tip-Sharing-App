@@ -1,6 +1,6 @@
 // base staffmember type
 export interface StaffMember {
-  id: number;
+  id: string;
   firstName: string;
   lastName: string;
   dateCreated: Date;
@@ -14,16 +14,16 @@ export type GratuityDistributionType = 'fixed' | 'percentage';
 export interface GratuityConfig {
   distributesGratuities: boolean;
   receivesGratuities: boolean;
-  sourceGroupIds?: number[];
-  recipientGroupIds?: number[];
+  sourceGroupIds?: string[];
+  recipientGroupIds?: string[];
   distributionType?: GratuityDistributionType
   fixedAmount?: number;
   percentage?: number;
 }
 // base staff group interface
 export interface StaffGroup  {
-  id: number
-  name: string
+  id: string;
+  name: string;
   description?: string;
   staffMemberIds: number[];
   dateUpdated: Date;
@@ -32,8 +32,8 @@ export interface StaffGroup  {
 
 // Individual staff member's collected tips for a specific day/session
 export interface StaffMemberTips {
-  staffId: number
-  groupId: number
+  staffId: string;
+  groupId: string;
   creditCardTips: number
   // Track when these tips were recorded
   recordedAt: Date
@@ -43,7 +43,7 @@ export interface StaffMemberTips {
 export interface GratuityRecipientGroup extends StaffGroup {
   gratuityConfig: GratuityConfig & {
     distributesGratuities: false; // group receives, does not distribute
-    sourceGroupId: number;
+    sourceGroupId: string;
     distributionType: GratuityDistributionType; // required
   } & (
     | { distributionType: 'fixed'; fixedAmount: number}
@@ -65,13 +65,13 @@ export type AnyStaffGroup = StaffGroup | GratuityRecipientGroup | GratuityDistri
 export interface StaffGroupFormState {
   name: string;
   description?: string;
-  selectedStaffMemberIds: number[];
+  selectedStaffMemberIds: string[];
 
   // gratuity configuration state
   distributesGratuities?: boolean;
   receivesGratuities?: boolean;
-  sourceGroupIds?: number[];
-  recipientGroupIds?: number[];
+  sourceGroupIds?: string[];
+  recipientGroupIds?: string[];
   distributionType?: GratuityDistributionType;
   fixedAmount?: number;
   percentage?: number;
@@ -93,7 +93,7 @@ export interface NestedGroupCreationState {
 export interface CreateStaffGroupRequest {
   name: string;
   description?: string;
-  staffMemberIds: number[];
+  staffMemberIds: string[];
   gratuityConfig: GratuityConfig;
 }
 

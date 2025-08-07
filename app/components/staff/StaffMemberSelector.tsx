@@ -5,14 +5,14 @@ import { StaffMember } from '../../../types';
 
 
 interface StaffMemberSelectorProps {
-  selectedIds: number[];
-  onSelectionChange: (ids: number[]) => void;
+  selectedIds: string[];
+  onSelectionChange: (ids: string[]) => void;
 }
 
 export default function StaffMemberSelector({ selectedIds, onSelectionChange }: StaffMemberSelectorProps) {
   const staffMembers = useAtomValue(staffMembersAtom);
 
-  const handleToggle = (memberId: number) => {
+  const handleToggle = (memberId: string) => {
     const newSelection = selectedIds.includes(memberId)
     ? selectedIds.filter(id => id !== memberId)
     : [...selectedIds, memberId];

@@ -1,4 +1,4 @@
-import { mockStaffMembers } from './lib/mock-data';
+import { mockStaffMembers } from '../mock-data';
 import StaffMember from './components/staff/StaffMember';
 
 export default function HomePage() {

@@ -4,7 +4,7 @@ import { AnyStaffGroup } from "../../../types"
 interface GratuitySourceModalProps {
   isOpen: boolean;
   availableGroups: AnyStaffGroup[];
-  onSelectGroup: (groupId: number) => void;
+  onSelectGroup: (groupId: string) => void;
   onCreateNewGroup: () => void;
   onClose: () => void;
 }
