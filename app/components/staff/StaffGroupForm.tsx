@@ -19,7 +19,7 @@ export default function StaffGroupForm({ onSubmit, onCancel }: StaffGroupFormPro
   const [nestedState, setNestedState] = useAtom(nestedGroupCreationAtom);
 
   const updateForm = (updates: Partial<typeof formState>) => {
-    setFormState(prev => ({ ...prev, ...updates}));
+    setFormState(prev => ({ ...prev, ...updates }));
   }
 
   const handleSubmit = async () => {
@@ -29,8 +29,7 @@ export default function StaffGroupForm({ onSubmit, onCancel }: StaffGroupFormPro
       staffMemberIds: formState.selectedStaffMemberIds,
       gratuityConfig: {
         distributesGratuities: formState.distributesGratuities || false,
-        receivesGratuities: formState.receivesGratuities || false,
-        sourceGroupIds: formState.sourceGroupIds,
+        sourceGroupId: formState.sourceGroupId,
         distributionType: formState.distributionType,
         fixedAmount: formState.fixedAmount,
         percentage: formState.percentage
@@ -116,7 +115,7 @@ export default function StaffGroupForm({ onSubmit, onCancel }: StaffGroupFormPro
               <p><strong>Distributes Gratuities:</strong> {formState.distributesGratuities ? 'Yes' : 'No'}</p>
               {!formState.distributesGratuities && (
                 <>
-                  <p><strong>Source Group:</strong> {formState.sourceGroupIds}</p>
+                  <p><strong>Source Group:</strong> {formState.sourceGroupId}</p>
                   <p><strong>Distribution Type:</strong> {formState.distributionType}</p>
                   {formState.distributionType === 'fixed' && (
                     <p><strong>Fixed Amount:</strong> ${formState.fixedAmount}</p>

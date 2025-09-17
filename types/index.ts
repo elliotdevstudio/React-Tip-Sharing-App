@@ -1,4 +1,5 @@
 // base staffmember type
+
 export interface StaffMember {
   id: string;
   firstName: string;
@@ -6,16 +7,13 @@ export interface StaffMember {
   dateCreated: Date;
 }
 
-
 // gratuity dist. types
 export type GratuityDistributionType = 'fixed' | 'percentage';
 
 // gratuity configuration interface
 export interface GratuityConfig {
   distributesGratuities: boolean;
-  receivesGratuities: boolean;
-  sourceGroupIds?: string[];
-  recipientGroupIds?: string[];
+  sourceGroupId?: string;
   distributionType?: GratuityDistributionType
   fixedAmount?: number;
   percentage?: number;
@@ -25,7 +23,8 @@ export interface StaffGroup  {
   id: string;
   name: string;
   description?: string;
-  staffMemberIds: number[];
+  staffMemberIds: string[];
+  dateCreated: Date;
   dateUpdated: Date;
   gratuityConfig: GratuityConfig;
 }
@@ -56,7 +55,7 @@ export interface GratuityDistributorGroup extends StaffGroup {
   gratuityConfig: GratuityConfig & {
     distributesGratuities: true;
   };
-  recipientGroups?: number[];// IDs of groups that receive gratuities from this group
+  recipientGroups?: string[];// IDs of groups that receive gratuities from this group
 }
 
 // union type for all possible group types
@@ -66,16 +65,11 @@ export interface StaffGroupFormState {
   name: string;
   description?: string;
   selectedStaffMemberIds: string[];
-
-  // gratuity configuration state
   distributesGratuities?: boolean;
-  receivesGratuities?: boolean;
-  sourceGroupIds?: string[];
-  recipientGroupIds?: string[];
+  sourceGroupId?: string;
   distributionType?: GratuityDistributionType;
   fixedAmount?: number;
   percentage?: number;
-
   // UI state
   isCreatingSourceGroup: boolean;
   showGratuityModal: boolean;
@@ -114,7 +108,7 @@ export function isGratuityDistributionGroup(group: AnyStaffGroup): group is Grat
 
 export function isGratuityRecipientGroup(group: AnyStaffGroup): group is GratuityRecipientGroup {
   return group.gratuityConfig.distributesGratuities === false && 
-         group.gratuityConfig.sourceGroupIds !== undefined;
+         group.gratuityConfig.sourceGroupId !== undefined;
 }
 
 export function hasfixedGratuityAmount(group: GratuityRecipientGroup): group is GratuityRecipientGroup & { gratuityConfig: { distributionType: 'fixed'; fixedAmount: number} } {

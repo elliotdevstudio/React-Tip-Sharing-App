@@ -1,4 +1,5 @@
-'use client';
+'use client'
+
 import { useAtom } from 'jotai';
 import { staffMembersAtom } from '../../atoms/staffAtoms';
 

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { StaffGroupFormState, AnyStaffGroup } from '../../../types';
 import GratuitySourceModal from './GratuitySourceModal';
 
-interface gratuityConfigStepProps {
+interface GratuityConfigStepProps {
   formState: StaffGroupFormState;
   availableGroups: AnyStaffGroup[];
   onUpdateForm: (updates: Partial<StaffGroupFormState>) => void;
@@ -17,7 +17,7 @@ export default function GratuityConfigStep({
   onUpdateForm,
   onNext,
   onBack
-}: gratuityConfigStepProps) {
+}: GratuityConfigStepProps) {
   const handleGratuityToggle = (distributes: boolean) => {
     onUpdateForm({
       distributesGratuities: distributes,
