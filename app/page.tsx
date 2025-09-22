@@ -1,9 +1,40 @@
-import { mockStaffMembers } from '../mock-data';
-import StaffMember from './components/staff/StaffMember';
+'use client';
+import { useState, useEffect } from 'react';
+import { StaffMember } from '../types';
 
 export default function HomePage() {
+  const [staffMembers, setStaffMembers] = useState<StaffMember[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadStaffMembers = async () => {
+      try {
+        const response = await fetch('/api/staff/members');
+        const data = await response.json();
+        
+        if (data.success) {
+          setStaffMembers(data.members);
+        }
+      } catch (error) {
+        console.error('Failed to load staff members:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadStaffMembers();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="text-center py-8">
+        <div className="text-lg">Loading staff members...</div>
+      </div>
+    );
+  }
+
   // Sort staff members alphabetically by last name
-  const sortedStaff = [...mockStaffMembers].sort((a, b) => 
+  const sortedStaff = [...staffMembers].sort((a, b) => 
     a.lastName.localeCompare(b.lastName)
   );
 
@@ -26,7 +57,7 @@ export default function HomePage() {
           <div className="space-y-3">
             {sortedStaff.map((member) => (
               <div 
-                key={member.id} 
+                key={member.id}  // Now uses unique MongoDB ObjectId strings
                 className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0"
               >
                 <div>
@@ -34,12 +65,12 @@ export default function HomePage() {
                     {member.lastName}, {member.firstName} 
                   </h3>
                   <p className="text-sm text-gray-500">
-                    Added: {member.dateCreated.toLocaleDateString()}
+                    Added: {new Date(member.dateCreated).toLocaleDateString()}
                   </p>
                 </div>
                 <div className="text-right">
                   <span className="text-sm text-gray-400">
-                    ID: {member.id}
+                    ID: {member.id.slice(-6)}  {/* Show last 6 chars of ObjectId */}
                   </span>
                 </div>
               </div>
