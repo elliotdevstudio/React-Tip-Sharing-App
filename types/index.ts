@@ -13,10 +13,11 @@ export type GratuityDistributionType = 'fixed' | 'percentage';
 // gratuity configuration interface
 export interface GratuityConfig {
   distributesGratuities: boolean;
-  sourceGroupId?: string;
+  sourceGroupIds?: string[];
   distributionType?: GratuityDistributionType
   fixedAmount?: number;
   percentage?: number;
+  recipientGroupIds?: string[];
 }
 // base staff group interface
 export interface StaffGroup  {
@@ -66,14 +67,15 @@ export interface StaffGroupFormState {
   description?: string;
   selectedStaffMemberIds: string[];
   distributesGratuities?: boolean;
-  sourceGroupId?: string;
+  sourceGroupIds?: string[];
   distributionType?: GratuityDistributionType;
   fixedAmount?: number;
   percentage?: number;
+  recipientGroupIds?: string[];
   // UI state
   isCreatingSourceGroup: boolean;
   showGratuityModal: boolean;
-  step: 'basic' | 'gratuity-setup' | 'distribution-config' | 'review';
+  step: 'basic' | 'gratuity-setup' | 'connection-setup' | 'review';
 }
 
 // Modal state for nested group creation 
@@ -108,7 +110,7 @@ export function isGratuityDistributionGroup(group: AnyStaffGroup): group is Grat
 
 export function isGratuityRecipientGroup(group: AnyStaffGroup): group is GratuityRecipientGroup {
   return group.gratuityConfig.distributesGratuities === false && 
-         group.gratuityConfig.sourceGroupId !== undefined;
+         group.gratuityConfig.sourceGroupIds !== undefined;
 }
 
 export function hasfixedGratuityAmount(group: GratuityRecipientGroup): group is GratuityRecipientGroup & { gratuityConfig: { distributionType: 'fixed'; fixedAmount: number} } {

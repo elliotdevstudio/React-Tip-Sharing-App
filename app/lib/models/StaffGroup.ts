@@ -3,10 +3,11 @@ import { GratuityDistributionType } from "../../../types";
 
 export interface GratuityConfigDocument {
   distributesGratuities: boolean;
-  sourceGroupId?: ObjectId;  // ← ObjectId for database
+  sourceGroupIds?: ObjectId[];  // ← ObjectId array for database
   distributionType?: GratuityDistributionType;
   fixedAmount?: number;
   percentage?: number;
+  recipientGroupIds?: ObjectId[];
 }
 
 export interface StaffGroupDocument {
@@ -28,7 +29,8 @@ export interface StaffGroupWithId {
   dateUpdated: Date;
   gratuityConfig: {
     distributesGratuities: boolean;
-    sourceGroupId?: string;  // String for frontend
+    sourceGroupIds?: string[];  // String for frontend
+    recipientGroupIds?: string[];
     distributionType?: GratuityDistributionType;
     fixedAmount?: number;
     percentage?: number;
@@ -44,10 +46,12 @@ export function transformStaffGroup(doc: StaffGroupDocument): StaffGroupWithId {
     dateCreated: doc.dateCreated,
     dateUpdated: doc.dateUpdated,
     gratuityConfig: {
-      ...doc.gratuityConfig,
-      sourceGroupId: doc.gratuityConfig.sourceGroupId 
-      ? doc.gratuityConfig.sourceGroupId.toString() 
-      : undefined
+      distributesGratuities: doc.gratuityConfig.distributesGratuities,
+      sourceGroupIds: doc.gratuityConfig.sourceGroupIds?.map(id => id.toString()) || [],  // Changed
+      distributionType: doc.gratuityConfig.distributionType,
+      fixedAmount: doc.gratuityConfig.fixedAmount,
+      percentage: doc.gratuityConfig.percentage,
+      recipientGroupIds: doc.gratuityConfig.recipientGroupIds?.map(id => id.toString()) || []
     }
   };
 }

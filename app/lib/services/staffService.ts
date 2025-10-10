@@ -83,9 +83,8 @@ export class StaffService {
       dateUpdated: new Date(),
       gratuityConfig: {
         ...request.gratuityConfig,
-        sourceGroupId: request.gratuityConfig.sourceGroupId 
-          ? new ObjectId(request.gratuityConfig.sourceGroupId) 
-          : undefined
+        sourceGroupIds: request.gratuityConfig.sourceGroupIds?.map(id => new ObjectId(id)) || [],    // Map array
+        recipientGroupIds: request.gratuityConfig.recipientGroupIds?.map(id => new ObjectId(id)) || [] // Map array
       }
     };
 
@@ -99,6 +98,141 @@ export class StaffService {
 
     console.log('✅ Successfully created staff group');
     return transformStaffGroup(createdGroup);
+  }
+
+  static async updateGroupConnections(
+    sourceGroupId: string, 
+    recipientGroupId: string, 
+    action: 'add' | 'remove'
+  ): Promise<void> {
+    console.log(`🔗 ${action === 'add' ? 'Adding' : 'Removing'} connection:`, { sourceGroupId, recipientGroupId });
+    const db = await this.getDb();
+
+    if (action === 'add') {
+    // Add recipientGroupId to source group's recipientGroupIds array
+      await db.collection('staff_groups').updateOne(
+        { _id: new ObjectId(sourceGroupId) },
+        { $addToSet: { 'gratuityConfig.recipientGroupIds': new ObjectId(recipientGroupId) } } as any
+      );
+
+    // Add sourceGroupId to recipient group's sourceGroupIds array
+      await db.collection('staff_groups').updateOne(
+        { _id: new ObjectId(recipientGroupId) },
+        { $addToSet: { 'gratuityConfig.sourceGroupIds': new ObjectId(sourceGroupId) } } as any
+      );
+    } else {
+    // Remove recipientGroupId from source group's recipientGroupIds array
+      await db.collection('staff_groups').updateOne(
+        { _id: new ObjectId(sourceGroupId) },
+        { $pull: { 'gratuityConfig.recipientGroupIds': new ObjectId(recipientGroupId) } } as any
+      );
+
+    // Remove sourceGroupId from recipient group's sourceGroupIds array
+      await db.collection('staff_groups').updateOne(
+        { _id: new ObjectId(recipientGroupId) },
+        { $pull: { 'gratuityConfig.sourceGroupIds': new ObjectId(sourceGroupId) } } as any
+      );
+    }
+
+    console.log(`✅ Successfully ${action === 'add' ? 'added' : 'removed'} bidirectional connection`);
+  }
+
+  static async updateStaffGroup(groupId: string, updates: {
+    name?: string;
+    description?: string;
+    staffMemberIds?: string[];
+    gratuityConfig?: any;
+  }): Promise<StaffGroupWithId> {
+    console.log('📝 Updating staff group:', groupId);
+    const db = await this.getDb();
+  
+    // Get current group to compare connections
+    const currentGroup = await db.collection<StaffGroupDocument>('staff_groups').findOne({_id: new ObjectId(groupId)});
+
+    if (!currentGroup) {
+     throw new Error('Group not found')
+    }
+
+
+    // Prepare the update document
+    const updateDoc: any = {
+      dateUpdated: new Date()
+    };
+  
+    if (updates.name !== undefined) updateDoc.name = updates.name;
+    if (updates.description !== undefined) updateDoc.description = updates.description;
+    if (updates.staffMemberIds) {
+      updateDoc.staffMemberIds = updates.staffMemberIds.map(id => new ObjectId(id));
+    }
+    if (updates.gratuityConfig) {
+      updateDoc.gratuityConfig = {
+        ...updates.gratuityConfig,
+        sourceGroupIds: updates.gratuityConfig.sourceGroupIds?.map(id => new ObjectId(id)) || [],
+        recipientGroupIds: updates.gratuityConfig.recipientGroupIds?.map(id => new ObjectId(id)) || []
+      };
+
+    // HANDLE BIDIRECTIONAL CONNECTION UPDATES
+      const currentRecipients = currentGroup.gratuityConfig.sourceGroupIds?.map(id => id.toString()) || [];
+      const newRecipients = updates.gratuityConfig.recipientGroupIds || [];
+
+      const currentSources = currentGroup.gratuityConfig.sourceGroupIds?.map(id => id.toString()) || [];
+      const newSources = updates.gratuityConfig.sourceGroupIds || [];
+
+      // UPDATE RECIPIENT CONNECTIONS
+      const recipientsToAdd = newRecipients.filter(id => !currentRecipients.includes(id));
+      const recipientsToRemove = currentRecipients.filter(id => !newRecipients.includes(id));
+
+      // UPDATE SOURCE CONNECTIONS
+      const sourcesToAdd = newSources.filter(id => !currentSources.includes(id));
+      const sourcesToRemove = currentSources.filter(id => !newSources.includes(id));
+
+      // Apply bidirectional updates
+      for (const recipientId of recipientsToAdd) {
+        await this.updateGroupConnections(groupId, recipientId, 'add');
+      }
+      for (const recipientId of recipientsToRemove) {
+        await this.updateGroupConnections(groupId, recipientId, 'remove');
+      }
+      for (const sourceId of sourcesToAdd) {
+        await this.updateGroupConnections(sourceId, groupId, 'add');
+      }
+      for (const sourceId of sourcesToRemove) {
+        await this.updateGroupConnections(sourceId, groupId, 'remove');
+      }
+    }
+
+    const result = await db.collection<StaffGroupDocument>('staff_groups')
+      .updateOne({ _id: new ObjectId(groupId) }, { $set: updateDoc });
+    
+    if (result.matchedCount === 0) {
+      throw new Error('Group not found');
+    }
+  
+    // Return the updated group
+    const updatedGroup = await db.collection<StaffGroupDocument>('staff_groups')
+      .findOne({ _id: new ObjectId(groupId) });
+    
+    if (!updatedGroup) {
+      throw new Error('Failed to retrieve updated group');
+    }
+
+    console.log('✅ Successfully updated staff group with bidirectional connections');
+    return transformStaffGroup(updatedGroup);
+  }
+
+  static async deleteStaffGroup(groupId: string): Promise<void> {
+    console.log('🗑️ Deleting staff group:', groupId);
+    const db = await this.getDb();
+    
+    const result = await db.collection('staff_groups').deleteOne({ 
+      _id: new ObjectId(groupId) 
+    });
+    
+    if (result.deletedCount === 0) {
+      throw new Error('Group not found or already deleted');
+    }
+    
+    console.log('✅ Successfully deleted staff group');
   }
 
   static async seedInitialData(): Promise<void> {
